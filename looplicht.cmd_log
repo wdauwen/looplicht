@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "/home/student/looplicht/looplicht.xst" -ofn "/home/student/looplicht/looplicht.syr" 
+xst -intstyle ise -ifn "/home/student/looplicht/looplicht.xst" -ofn "/home/student/looplicht/looplicht.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 looplicht.ngc looplicht.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o looplicht_map.ncd looplicht.ngd looplicht.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 looplicht.ngc looplicht.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o looplicht_map.ncd looplicht.ngd looplicht.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc looplicht.ucf -p xc3s700an-fgg484-4 looplicht.ngc looplicht.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o looplicht_map.ncd looplicht.ngd looplicht.pcf 
+par -w -intstyle ise -ol high -t 1 looplicht_map.ncd looplicht.ncd looplicht.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml looplicht.twx looplicht.ncd -o looplicht.twr looplicht.pcf -ucf looplicht.ucf 
+bitgen -intstyle ise -f looplicht.ut looplicht.ncd 
+xst -intstyle ise -ifn "/home/student/looplicht/looplicht.xst" -ofn "/home/student/looplicht/looplicht.syr" 
+xst -intstyle ise -ifn "/home/student/looplicht/looplicht.xst" -ofn "/home/student/looplicht/looplicht.syr" 
+xst -intstyle ise -ifn "/home/student/looplicht/looplicht.xst" -ofn "/home/student/looplicht/looplicht.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc looplicht.ucf -p xc3s700an-fgg484-4 looplicht.ngc looplicht.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o looplicht_map.ncd looplicht.ngd looplicht.pcf 
+par -w -intstyle ise -ol high -t 1 looplicht_map.ncd looplicht.ncd looplicht.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml looplicht.twx looplicht.ncd -o looplicht.twr looplicht.pcf -ucf looplicht.ucf 
+bitgen -intstyle ise -f looplicht.ut looplicht.ncd 
+xst -intstyle ise -ifn "/home/student/looplicht/looplicht.xst" -ofn "/home/student/looplicht/looplicht.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc looplicht.ucf -p xc3s700a-fg484-4 looplicht.ngc looplicht.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o looplicht_map.ncd looplicht.ngd looplicht.pcf 
+par -w -intstyle ise -ol high -t 1 looplicht_map.ncd looplicht.ncd looplicht.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml looplicht.twx looplicht.ncd -o looplicht.twr looplicht.pcf -ucf looplicht.ucf 
+bitgen -intstyle ise -f looplicht.ut looplicht.ncd 

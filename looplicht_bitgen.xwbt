@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/student/looplicht/looplicht.ncd
+OUTFILE=/home/student/looplicht/looplicht.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s700a-4fg484
+WORKINGDIR=/home/student/looplicht
+LICENSE=WebPack
+USER_INFO=210935052_0_0_156
